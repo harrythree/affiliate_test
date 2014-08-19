@@ -1,0 +1,12 @@
+<% if (@current_referrer) then %>
+  <div class="alert alert-success alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    You were referred by <strong><%= @current_referrer.email %></strong>
+  </div>
+<% end %>
+
+<ul class="list-group">
+  <li class="list-group-item active"><h1>How To Use</h1></li>
+  <li class="list-group-item"><span class="label label-primary">1.</span> Sign up and/or Sign in. You will then be redirected to your Dashboard which will show your Affiliate Link.</li>
+  <li class="list-group-item"><span class="label label-primary">2.</span> Use this Affiliate Link to invite new users to the site. When the referred user signs up for a new account, your Affiliate Code will now become their Referral Code.</li>
+</ul>
